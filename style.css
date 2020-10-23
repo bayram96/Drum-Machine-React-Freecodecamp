@@ -1,0 +1,141 @@
+body {
+  background: #b5b0b0;
+}
+#drum-machine {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #d2d6d3;
+  max-width: 650px;
+/*   height: 350px; */
+  border: 5px solid orange;
+  margin: 0 auto;
+  margin-top: 180px;
+  border-radius: 10px;
+}
+.col-drums {
+  height: 270px;
+  width: 300px;
+  min-width: 300px;
+  margin: 40px 0 40px 40px; 
+}
+.col-settings {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
+/*   background: red; */
+}
+#display {
+  text-align: center;
+  background: grey;
+  height: 23px;
+  width: 200px;
+  padding: 15px 0;  
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.drum-pad {
+  font-size: 1.3rem;
+  font-weight: bold;
+  background: grey;
+  padding: 20px;
+  width: 90px;
+  height: 80px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px black;
+  cursor: pointer;
+  outline: none;
+}
+
+.drum-pad:hover {
+  background: orange;
+}
+.button-hover {
+  background: orange;
+}
+
+.toggle-btn {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  width: 45px;
+  height: 17px;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+.toggle-btn .left {
+  width: 20px;
+  height: 17px;
+  background: blue;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.toggle-btn .right {
+  width: 20px;
+  height: 17px;
+  background: blue;
+  border-radius: 10px;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.toggle-btn .hide {
+  background: black;
+}
+.toggle-lbl {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+/*   margin-left: 5px; */
+}
+
+.disabled:hover  {
+  background: grey;
+}
+.disabled-btn-click {
+  box-shadow: none;
+}
+.volume-slider input[type=range] {
+  width: 200px;
+  background: red;
+  cursor: pointer;
+}
+.volume-slider input[type=range]::-webkit-slider-runnable-track  {
+  width: 200px;
+/*   background: red; */
+  cursor: pointer;
+}
+.volume-slider input[type=range]::-webkit-slider-thumb {
+  background: red;
+}
+
+@media only screen and (max-width: 600px) {
+  #drum-machine {
+    width: 70%;
+    min-width: 350px;
+    justify-content: center;
+  }
+  .drum-pad {
+    font-size: 1.3rem;
+    padding: 20px;
+    width: 70px;
+    height: 60px;
+    margin: 5px;
+  }
+  .col-drums {
+    margin-bottom: 0;
+  }
+  .col-settings {
+    margin-bottom: 30px;
+  }
+  .toggle-btn {
+    margin: 5px;
+  }
+}
